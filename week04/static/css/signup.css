@@ -72,7 +72,6 @@ form {
   line-height: normal;
   background-color: #1c1c1c;
   margin-top: 5px;
-  padding-left: 10px;
 }
 
 input::placeholder {
@@ -89,5 +88,4 @@ button {
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
-  border: none;
 }
