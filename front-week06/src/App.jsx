@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
+import Layout from "./components/Layout";
 import QuizApp from "./pages/QuizApp";
-import { ResultPage } from "./pages/ResultPage";
+import ResultPage from "./pages/ResultPage";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="app">
-        <Routes>
-          <Route path="/" element={<QuizApp />} />
-          <Route path="/result" element={<ResultPage />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route index element={<QuizApp />} />
+        <Route path="quiz/:quizId" element={<QuizApp />} />
+        <Route path="result" element={<ResultPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
