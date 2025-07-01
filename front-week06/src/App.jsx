@@ -2,11 +2,7 @@ import "./App.css";
 import QuizApp from "./pages/QuizApp";
 
 function App() {
-  return (
-    <>
-      <QuizApp />
-    </>
-  );
+  return <QuizApp />;
 }
 
 export default App;
